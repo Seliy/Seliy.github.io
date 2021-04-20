@@ -1,10 +1,10 @@
 @import "normalize";
 @import "rouge-github";
-@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
 
 /* LAYOUT STYLES */
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
@@ -26,7 +26,7 @@ a:hover {
 header {
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
 }
@@ -97,7 +97,7 @@ a.button {
   height: 58px;
   padding-top: 22px;
   padding-left: 68px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 23px;
   line-height: 1.2;
   color: #fff;
@@ -110,7 +110,7 @@ header a.button {
   position: absolute;
   top: 0;
   right: 0;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat;
+  // background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
 aside a.button {
   display: block;
@@ -118,10 +118,11 @@ aside a.button {
   padding-left: 64px;
   margin-bottom: 20px;
   font-size: 21px;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+  // background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
 
-code, pre {
+code,
+pre {
   margin-bottom: 30px;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 13px;
@@ -148,10 +149,11 @@ pre code {
   border: none;
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
   margin-bottom: 20px;
 }
-
 
 /* COMMON STYLES */
 
@@ -181,16 +183,14 @@ td {
 form {
   padding: 20px;
   background: #f2f2f2;
-
 }
-
 
 /* GENERAL ELEMENT TYPE STYLES */
 
 #main-content h1 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 2.8em;
   font-weight: normal;
   color: #474747;
@@ -207,7 +207,7 @@ form {
 
 #main-content h2 {
   margin-bottom: 8px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: bold;
   color: #474747;
@@ -223,7 +223,7 @@ form {
 #main-content h3 {
   margin-top: 24px;
   margin-bottom: 8px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 18px;
   font-weight: bold;
   color: #474747;
@@ -239,7 +239,7 @@ form {
 
 #main-content h4 {
   margin-bottom: 8px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 15px;
   font-weight: bold;
   color: #474747;
@@ -255,7 +255,7 @@ h4:before {
 
 #main-content h5 {
   margin-bottom: 8px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 14px;
   color: #474747;
   text-indent: 3px;
@@ -269,8 +269,8 @@ h5:before {
 
 #main-content h6 {
   margin-bottom: 8px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: .8em;
+  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
+  font-size: 0.8em;
   color: #474747;
   text-indent: 3px;
 }
@@ -338,25 +338,33 @@ footer a:hover {
   height: 0;
   clear: both;
   visibility: hidden;
-  content: '.';
+  content: ".";
 }
 
-.clearfix {display: inline-block;}
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
+.clearfix {
+  display: inline-block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
 
 /* #Media Queries
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) { }
+@media only screen and (max-width: 959px) {
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .inner {
     width: 740px;
   }
-  header h1, header h2 {
+  header h1,
+  header h2 {
     width: 340px;
   }
   header h1 {
@@ -391,7 +399,8 @@ footer a:hover {
   header .inner {
     position: relative;
   }
-  header h1, header h2 {
+  header h1,
+  header h2 {
     width: 100%;
   }
   header h1 {
@@ -424,7 +433,7 @@ footer a:hover {
   #main-content,
   aside#sidebar {
     float: none;
-    width: 100% ! important;
+    width: 100% !important;
   }
   aside#sidebar {
     min-height: 0;
@@ -449,7 +458,9 @@ footer a:hover {
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) { }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) { }
+@media only screen and (max-width: 479px) {
+}
