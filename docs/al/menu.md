@@ -14,6 +14,8 @@ layout: default
 
 [2021-04-23](./count/2021-04-23.html)
 
+[2021-04-24](./count/2021-04-23.html)
+
 _yay_
 
 [back](./)
